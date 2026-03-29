@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Credent Systems — IT Solutions & Engineering</title>
+<meta name="description" content="Credent Systems — Premium IT Solutions, Security, Access Control & AV Engineering. Bangladesh's trusted technology partner since 2019.">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* ── HOME-SPECIFIC ── */
+.hero-badge { display:inline-flex;align-items:center;gap:6px;padding:4px 14px 4px 4px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:100px;font-size:.72rem;font-weight:700;letter-spacing:.06em;color:rgba(255,255,255,.8);margin-bottom:1.5rem;backdrop-filter:blur(8px) }
+.hero-badge-pill { background:var(--gold);color:var(--ink);padding:3px 10px;border-radius:100px;font-size:.68rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase }
+.hero-scroll { position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.4);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;z-index:10 }
+.hero-scroll-line { width:1px;height:40px;background:linear-gradient(rgba(255,255,255,.3),transparent);animation:scrl 2s infinite }
+@keyframes scrl { 0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom} }
+
+/* ── ABOUT STRIP ── */
+.about-strip { display:grid;grid-template-columns:1.1fr 1fr;gap:0;background:var(--border);border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--border) }
+.about-left { background:white;padding:60px 52px }
+.about-right { background:var(--off);padding:60px 48px;display:flex;flex-direction:column;justify-content:center }
+.about-metrics { display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border-radius:var(--r-lg);overflow:hidden;margin-top:2.5rem;border:1px solid var(--border) }
+.metric { background:white;padding:28px 24px;transition:.25s }
+.metric:hover { background:var(--off) }
+.metric-n { font-family:var(--font-head);font-size:2.5rem;font-weight:900;color:var(--text);line-height:1 }
+.metric-l { font-size:.8rem;font-weight:600;color:var(--text-soft);margin-top:4px;text-transform:uppercase;letter-spacing:.06em }
+.feat-list { list-style:none;display:flex;flex-direction:column;gap:.7rem }
+.feat-list li { display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:var(--text-mid);line-height:1.6 }
+.check { width:20px;height:20px;min-width:20px;border-radius:50%;background:var(--off2);display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--sky);margin-top:1px }
+
+/* ── SRV SECTION ── */
+.srv-section-bg { background:var(--off) }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="tb-socials">
+    <a href="#" class="tb-soc">f</a><a href="#" class="tb-soc">in</a><a href="#" class="tb-soc">ig</a>
+  </div>
+  <div class="tb-info">
+    <div class="tb-item">📞 <span>+880 1xxx-xxxxxx</span></div>
+    <div class="tb-item">✉️ <span>info@credentsystems.com</span></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><div class="logo-icon-stripe"></div></div>
+      <div class="logo-text"><b>Credent Systems</b><small>IT Solutions &amp; Engineering</small></div>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><button class="nav-btn active" onclick="location.href='index.html'">Home</button></li>
+      <li class="nav-item">
+        <button class="nav-btn">Company <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <a href="about.html" class="dd-link"><div class="dd-icon-wrap">🏢</div><div class="dd-text"><b>About Us</b><small>Our story & mission</small></div></a>
+          <a href="clients.html" class="dd-link"><div class="dd-icon-wrap">🤝</div><div class="dd-text"><b>Client List</b><small>30+ trusted partners</small></div></a>
+          <a href="blog.html" class="dd-link"><div class="dd-icon-wrap">📝</div><div class="dd-text"><b>Blog</b><small>Insights & news</small></div></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-btn">Solution <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="mega">
+          <div class="mega-grid">
+            <a href="sol-cctv.html" class="mega-link"><div class="mega-icon">📷</div><div class="mega-text"><b>Video Surveillance</b><small>IP CCTV & AI analytics</small></div></a>
+            <a href="sol-facility.html" class="mega-link"><div class="mega-icon">🏭</div><div class="mega-text"><b>Facility Protection</b><small>Access, alarms & barriers</small></div></a>
+            <a href="sol-perimeter.html" class="mega-link"><div class="mega-icon">🛡️</div><div class="mega-text"><b>Perimeter Security</b><small>Fence & outdoor detection</small></div></a>
+            <a href="sol-comm.html" class="mega-link"><div class="mega-icon">📡</div><div class="mega-text"><b>Communication</b><small>IP PBX, WiFi & video conf</small></div></a>
+            <a href="sol-intercom.html" class="mega-link"><div class="mega-icon">🔔</div><div class="mega-text"><b>Smart Video Intercom</b><small>Integrated door & lobby</small></div></a>
+            <a href="sol-av.html" class="mega-link"><div class="mega-icon">🎬</div><div class="mega-text"><b>Audio Visual</b><small>4K video, LED wall, AV dist</small></div></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-btn">Services <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <a href="srv-support.html" class="dd-link"><div class="dd-icon-wrap">🛠️</div><div class="dd-text"><b>Support Services</b><small>AMC & maintenance</small></div></a>
+          <a href="srv-consult.html" class="dd-link"><div class="dd-icon-wrap">💼</div><div class="dd-text"><b>Project Consultancy</b><small>Design & planning</small></div></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-btn">Market <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <a href="mkt-edu.html" class="dd-link"><div class="dd-icon-wrap">🎓</div><div class="dd-text"><b>Education Sector</b><small>Schools, colleges & unis</small></div></a>
+          <a href="mkt-rmg.html" class="dd-link"><div class="dd-icon-wrap">🏭</div><div class="dd-text"><b>RMG Industry</b><small>Garments & factories</small></div></a>
+        </div>
+      </li>
+      <li class="nav-item"><button class="nav-btn" onclick="location.href='contact.html'">Contacts</button></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get a Quote →</a>
+    <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" class="mob-a">🏠 Home</a>
+  <div class="mob-sec">Company</div>
+  <a href="about.html" class="mob-a">About Us</a><a href="clients.html" class="mob-a">Client List</a><a href="blog.html" class="mob-a">Blog</a>
+  <div class="mob-sec">Solution</div>
+  <a href="sol-cctv.html" class="mob-sub">→ Video Surveillance</a><a href="sol-facility.html" class="mob-sub">→ Facility Protection</a><a href="sol-perimeter.html" class="mob-sub">→ Perimeter Security</a><a href="sol-comm.html" class="mob-sub">→ Communication</a><a href="sol-intercom.html" class="mob-sub">→ Smart Video Intercom</a><a href="sol-av.html" class="mob-sub">→ Audio Visual</a>
+  <div class="mob-sec">Services</div>
+  <a href="srv-support.html" class="mob-a">Support Services</a><a href="srv-consult.html" class="mob-a">Project Consultancy</a>
+  <div class="mob-sec">Market</div>
+  <a href="mkt-edu.html" class="mob-a">For Education</a><a href="mkt-rmg.html" class="mob-a">For RMG Industry</a>
+  <a href="contact.html" class="mob-cta">Get a Quote →</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO SLIDER
+══════════════════════════════ -->
+<section class="hero">
+  <div class="hero-slides" id="slides">
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow"><div class="dot"></div> Security Surveillance</div>
+        <h1 class="hero-title">Keeping Record of<br><em>Every Movement</em></h1>
+        <p class="hero-sub">Advanced AI-powered IP CCTV — view, store & manage surveillance data anywhere in the world.</p>
+        <div class="hero-actions">
+          <a href="sol-cctv.html" class="btn btn-white-solid">Learn More <span class="arr">→</span></a>
+          <a href="contact.html" class="btn btn-ghost-white">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow"><div class="dot"></div> Smart Building Automation</div>
+        <h1 class="hero-title">Intelligent Spaces<br><em>Built for Tomorrow</em></h1>
+        <p class="hero-sub">Lighting, HVAC & motorized automation — engineered for peak efficiency and seamless control.</p>
+        <div class="hero-actions">
+          <a href="sol-facility.html" class="btn btn-white-solid">Explore <span class="arr">→</span></a>
+          <a href="contact.html" class="btn btn-ghost-white">Talk to Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=85')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow"><div class="dot"></div> Audio Visual Engineering</div>
+        <h1 class="hero-title">4K Experiences<br><em>That Inspire</em></h1>
+        <p class="hero-sub">LED video walls to immersive home theatres — crystal-clear AV solutions for every space.</p>
+        <div class="hero-actions">
+          <a href="sol-av.html" class="btn btn-white-solid">View AV <span class="arr">→</span></a>
+          <a href="contact.html" class="btn btn-ghost-white">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=85')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow"><div class="dot"></div> Access Control & Workplace</div>
+        <h1 class="hero-title">Secure, Smart<br><em>Modern Workplaces</em></h1>
+        <p class="hero-sub">Biometric access, HRM software & vehicle management — fully integrated for modern enterprises.</p>
+        <div class="hero-actions">
+          <a href="sol-facility.html" class="btn btn-white-solid">Discover <span class="arr">→</span></a>
+          <a href="contact.html" class="btn btn-ghost-white">Consult Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-ui">
+    <div class="slider-count"><b id="sNum">01</b> / 04</div>
+    <div class="slider-arrows">
+      <div class="s-arr" onclick="prevSlide()">←</div>
+      <div class="s-arr" onclick="nextSlide()">→</div>
+    </div>
+  </div>
+  <div class="slider-dots" id="sDots">
+    <div class="s-dot on"></div><div class="s-dot"></div><div class="s-dot"></div><div class="s-dot"></div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+</section>
+
+<!-- PARTNERS -->
+<div class="partners">
+  <div class="marquee-lbl">Our Technology Partners</div>
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <div class="partner">AXIS Communications</div><div class="partner">Honeywell</div><div class="partner">Hikvision</div><div class="partner">Dahua</div><div class="partner">Avitech</div><div class="partner">UNV</div><div class="partner">Schneider Electric</div><div class="partner">Samsung</div><div class="partner">LG Electronics</div><div class="partner">Bosch Security</div><div class="partner">Hanwha Vision</div><div class="partner">Uniview</div>
+      <div class="partner">AXIS Communications</div><div class="partner">Honeywell</div><div class="partner">Hikvision</div><div class="partner">Dahua</div><div class="partner">Avitech</div><div class="partner">UNV</div><div class="partner">Schneider Electric</div><div class="partner">Samsung</div><div class="partner">LG Electronics</div><div class="partner">Bosch Security</div><div class="partner">Hanwha Vision</div><div class="partner">Uniview</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     ABOUT STRIP
+══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="about-strip fade-up">
+      <div class="about-left">
+        <div class="label">About Credent Systems</div>
+        <h2 class="h2" style="margin-bottom:1rem">Where Technology<br>Meets Precision</h2>
+        <p class="body-lg" style="margin-bottom:1.75rem">LCredent offers industry-standard business solutions in engineering & IT — specifically tailored to bring abundant savings in cost, efficiency and investment while enhancing security and control.</p>
+        <ul class="feat-list">
+          <li><div class="check">✓</div> Alliance with 40+ leading global manufacturers</li>
+          <li><div class="check">✓</div> 15+ years experienced & certified engineers</li>
+          <li><div class="check">✓</div> End-to-end: design, deploy & maintain</li>
+          <li><div class="check">✓</div> Founded 2019 — formerly 4S Engineering & Technologies</li>
+        </ul>
+        <div class="about-metrics">
+          <div class="metric"><div class="metric-n">30+</div><div class="metric-l">Trusted Clients</div></div>
+          <div class="metric"><div class="metric-n">40+</div><div class="metric-l">Tech Partners</div></div>
+          <div class="metric"><div class="metric-n">15+</div><div class="metric-l">Years Experience</div></div>
+          <div class="metric"><div class="metric-n">100+</div><div class="metric-l">Projects Done</div></div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="label" style="color:var(--text-soft)">Our Approach</div>
+        <h3 class="h3" style="margin-bottom:1rem;color:var(--text)">We don't just install technology — we engineer ecosystems that evolve with your business.</h3>
+        <p class="body" style="margin-bottom:2rem">Credent works to identify opportunities to introduce and implement technology solutions that bring abundant savings in cost, efficiency and investment for you and your company — while enhancing greater security and control.</p>
+        <a href="about.html" class="btn btn-dark">Learn More About Us <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     WHY CHOOSE US
+══════════════════════════════ -->
+<section class="section-sm section-off">
+  <div class="container">
+    <div style="text-align:center;max-width:540px;margin:0 auto 3rem">
+      <div class="label fade-up" style="justify-content:center">Why Choose Us</div>
+      <h2 class="h2 fade-up d1">Design, Integrate,<br>Install & Maintain</h2>
+      <p class="body-lg fade-up d2" style="margin-top:.6rem">We deliver complete technology solutions from initial assessment through ongoing maintenance — one expert team, one commitment.</p>
+    </div>
+    <div class="why-grid fade-up d2">
+      <div class="why-card">
+        <div class="why-card-num">01</div>
+        <div class="why-card-icon">🎯</div>
+        <h3 class="h4">Design</h3>
+        <p class="body">We create managed security solutions based on expert assessment of your unique environment and situation.</p>
+        <a href="srv-consult.html" class="why-card-cta">Learn More →</a>
+      </div>
+      <div class="why-card">
+        <div class="why-card-num">02</div>
+        <div class="why-card-icon">🔗</div>
+        <h3 class="h4">Integrate</h3>
+        <p class="body">We partner with 40+ leading global manufacturers and build open, standardized systems suited to after-sales.</p>
+        <span class="why-card-cta">Learn More →</span>
+      </div>
+      <div class="why-card">
+        <div class="why-card-num">03</div>
+        <div class="why-card-icon">⚙️</div>
+        <h3 class="h4">Install</h3>
+        <p class="body">We implement designs using industry best practices, with careful planning and minimal business interruption.</p>
+        <span class="why-card-cta">Learn More →</span>
+      </div>
+      <div class="why-card">
+        <div class="why-card-num">04</div>
+        <div class="why-card-icon">🛡️</div>
+        <h3 class="h4">Maintain</h3>
+        <p class="body">Your system stays at peak condition. We repair, replace & warranty products with free ongoing upgrades.</p>
+        <a href="srv-support.html" class="why-card-cta">Learn More →</a>
+      </div>
+    </div>
+    <div class="stats-strip" style="margin-top:1.25rem">
+      <div class="stat-card fade-up d1">
+        <div class="stat-num">30+</div>
+        <div class="stat-label">Clients Nationwide</div>
+        <div class="stat-desc">Made them happy with solutions that exceeded expectations at the best price.</div>
+      </div>
+      <div class="stat-card fade-up d2">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Completed Projects</div>
+        <div class="stat-desc">Wide range of solutions delivered at different premises to meet client needs.</div>
+      </div>
+      <div class="stat-card fade-up d3">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Global Partners</div>
+        <div class="stat-desc">Alliances with the world's leading technology manufacturers and brands.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     COMPREHENSIVE SERVICES SECTION
+══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="srv-intro">
+      <div class="srv-intro-left">
+        <div class="label fade-up">Our Services</div>
+        <h2 class="h2 fade-up d1">Comprehensive Solutions<br>Under One Roof</h2>
+        <p class="body-lg fade-up d2" style="margin-top:.75rem;max-width:440px">From intelligent automation to robust security — we engineer complete technology ecosystems tailored to your business.</p>
+      </div>
+      <div class="srv-intro-right fade-up d2">
+        <p class="body" style="text-align:right;max-width:340px">Click any service item below to explore detailed solutions, case studies, and technical specifications.</p>
+      </div>
+    </div>
+
+    <div class="srv-cards-grid fade-up d2">
+      <!-- Card 1: IT Solutions -->
+      <a href="sol-facility.html" class="srv-card">
+        <div class="srv-card-num">01</div>
+        <div class="srv-card-icon">⚙️</div>
+        <div class="srv-card-title">IT Solutions & Engineering</div>
+        <ul class="srv-card-items">
+          <li><a href="sol-facility.html#lighting">Lighting Automation</a></li>
+          <li><a href="sol-facility.html#hvac">HVAC Automation</a></li>
+          <li><a href="sol-facility.html#shades">Motorized Shades & Curtain</a></li>
+          <li><a href="sol-av.html">Audio & Video Distribution</a></li>
+        </ul>
+        <div class="srv-card-arrow">↗</div>
+      </a>
+
+      <!-- Card 2: Security -->
+      <a href="sol-cctv.html" class="srv-card">
+        <div class="srv-card-num">02</div>
+        <div class="srv-card-icon">📷</div>
+        <div class="srv-card-title">Security Surveillance</div>
+        <ul class="srv-card-items">
+          <li><a href="sol-cctv.html#ipcctv">IP CCTV Solution</a></li>
+          <li><a href="sol-cctv.html#alarm">Intrusion Alarm System</a></li>
+          <li><a href="sol-cctv.html#ai">Artificial Intelligence</a></li>
+        </ul>
+        <div class="srv-card-arrow">↗</div>
+      </a>
+
+      <!-- Card 3: Access Control -->
+      <a href="sol-facility.html" class="srv-card">
+        <div class="srv-card-num">03</div>
+        <div class="srv-card-icon">🔐</div>
+        <div class="srv-card-title">Access Control & Workplace</div>
+        <ul class="srv-card-items">
+          <li><a href="sol-facility.html#hrm">Attendance & HRM Software</a></li>
+          <li><a href="sol-facility.html#access">Access Control Systems</a></li>
+          <li><a href="sol-facility.html#parking">Parking Management</a></li>
+          <li><a href="sol-facility.html#vehicle">Vehicle Scanners & Barriers</a></li>
+        </ul>
+        <div class="srv-card-arrow">↗</div>
+      </a>
+
+      <!-- Card 4: AV -->
+      <a href="sol-av.html" class="srv-card">
+        <div class="srv-card-num">04</div>
+        <div class="srv-card-icon">🎬</div>
+        <div class="srv-card-title">Audio Visual Engineering</div>
+        <ul class="srv-card-items">
+          <li><a href="sol-av.html#4k">4K Video Distribution</a></li>
+          <li><a href="sol-av.html#stream">4K 60 Streaming</a></li>
+          <li><a href="sol-av.html#wall">LCD / LED Video Wall</a></li>
+          <li><a href="sol-av.html#theatre">Home Theatre</a></li>
+          <li><a href="sol-intercom.html">Video Intercom</a></li>
+        </ul>
+        <div class="srv-card-arrow">↗</div>
+      </a>
+
+      <!-- Card 5: Low Voltage -->
+      <a href="sol-facility.html" class="srv-card">
+        <div class="srv-card-num">05</div>
+        <div class="srv-card-icon">⚡</div>
+        <div class="srv-card-title">Low Voltage Products</div>
+        <ul class="srv-card-items">
+          <li><a href="sol-facility.html">Electrical Switch Sockets</a></li>
+          <li><a href="sol-facility.html">Circuit Breakers, SPDs</a></li>
+          <li><a href="sol-facility.html">Online & Offline UPS</a></li>
+          <li><a href="sol-facility.html">Lightning Protection</a></li>
+        </ul>
+        <div class="srv-card-arrow">↗</div>
+      </a>
+
+      <!-- CTA Card -->
+      <div class="srv-card srv-cta-card">
+        <h3>Ready to Transform Your Infrastructure?</h3>
+        <p>Our certified engineers will design a custom solution for your unique requirements — at no initial cost.</p>
+        <a href="contact.html" class="btn btn-white-solid" style="font-size:.85rem;padding:11px 22px">Free Consultation <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     TECH INDEX
+══════════════════════════════ -->
+<section class="section section-off">
+  <div class="container">
+    <div style="text-align:center;max-width:520px;margin:0 auto 3.5rem">
+      <div class="label fade-up" style="justify-content:center">Technology Index</div>
+      <h2 class="h2 fade-up d1">We Deliver Solutions with<br>the Goal of Trusting Relationships</h2>
+    </div>
+    <div class="tech-split fade-up d2">
+      <div class="tech-left">
+        <div class="label" style="color:rgba(255,255,255,.4)">What We Cover</div>
+        <h3 class="h3" style="color:white;margin-bottom:.6rem">Complete Technology Domains</h3>
+        <p class="body" style="color:rgba(255,255,255,.45);margin-bottom:0">From security to smart buildings, communication to audio-visual — one partner for everything.</p>
+        <div class="tech-chips-grid">
+          <div class="tech-chip">📹 IP Video Surveillance</div>
+          <div class="tech-chip">🖥️ Central Monitoring</div>
+          <div class="tech-chip">🚪 Video Door Phone</div>
+          <div class="tech-chip">📶 WiFi & LAN Solution</div>
+          <div class="tech-chip">🚧 Speed Lane & Turnstile</div>
+          <div class="tech-chip">🔍 Body Scanner</div>
+          <div class="tech-chip">💡 Building Automation</div>
+          <div class="tech-chip">🎬 4K AV Systems</div>
+        </div>
+      </div>
+      <div class="tech-right">
+        <div class="label">How We Support You</div>
+        <h3 class="h3" style="margin-bottom:.5rem">Every Step of Your Journey</h3>
+        <p class="body" style="margin-bottom:2rem">From consultation to deployment and beyond — Credent is your end-to-end technology partner.</p>
+        <div class="tech-rows">
+          <div class="tech-row">
+            <div class="tech-icon">📡</div>
+            <div>
+              <h4>Communication Solution</h4>
+              <p>IP PBX, video conferencing, enterprise WiFi and IFP for seamless collaboration and connectivity.</p>
+            </div>
+          </div>
+          <div class="tech-row">
+            <div class="tech-icon">📋</div>
+            <div>
+              <h4>Project Consultancy</h4>
+              <p>We educate our clients, support converged technologies and provide solutions that exceed expectations.</p>
+            </div>
+          </div>
+          <div class="tech-row">
+            <div class="tech-icon">🤝</div>
+            <div>
+              <h4>Support Services</h4>
+              <p>Telephone support, preventative maintenance and software upgrades — keeping you tension-free.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-band-bg" style="background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=85')"></div>
+  <div class="cta-band-ov"></div>
+  <div class="cta-inner">
+    <div class="cta-text">
+      <div class="label" style="color:rgba(255,255,255,.4)">We Have a Team Who Can Think For You</div>
+      <h2 class="h2">Let's Talk About<br>Your Expectations</h2>
+      <p class="body-lg">30+ clients. 40+ global partners. 15+ years certified expertise.</p>
+    </div>
+    <a href="contact.html" class="btn btn-white-solid" style="font-size:1rem;padding:16px 40px">Knock Us <span class="arr">→</span></a>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem;margin-bottom:3rem">
+      <div><div class="label fade-up">Our Portfolio</div><h2 class="h2 fade-up d1">Projects We're Proud Of</h2></div>
+      <a href="clients.html" class="btn btn-outline fade-up d1">View All Clients <span class="arr">→</span></a>
+    </div>
+    <div class="proj-grid fade-up d2">
+      <div class="proj-card"><div class="proj-thumb"><img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=700&q=80" alt="CCTV" loading="lazy"></div><div class="proj-body"><div class="proj-tag">Security Surveillance</div><h3>Corporate HQ — IP CCTV Overhaul</h3><p>AI-powered surveillance across a 12-floor tower with central monitoring room.</p></div></div>
+      <div class="proj-card"><div class="proj-thumb"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&q=80" alt="Hotel" loading="lazy"></div><div class="proj-body"><div class="proj-tag">Smart Building</div><h3>5-Star Hotel — Lighting & HVAC</h3><p>End-to-end building automation with centralized smart control systems.</p></div></div>
+      <div class="proj-card"><div class="proj-thumb"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Factory" loading="lazy"></div><div class="proj-body"><div class="proj-tag">Access Control</div><h3>Industrial Facility — Access System</h3><p>Biometric, HRM integration and vehicle barriers for 500+ staff facility.</p></div></div>
+      <div class="proj-card"><div class="proj-thumb"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80" alt="Conference" loading="lazy"></div><div class="proj-body"><div class="proj-tag">Audio Visual</div><h3>Conference Centre — 4K AV System</h3><p>4K video distribution, LED video wall and immersive audio for a major venue.</p></div></div>
+      <div class="proj-card"><div class="proj-thumb"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=700&q=80" alt="Campus" loading="lazy"></div><div class="proj-body"><div class="proj-tag">Education</div><h3>University Campus — Smart Security</h3><p>Comprehensive campus surveillance, access control and PA system integration.</p></div></div>
+      <div class="proj-card" style="display:flex;align-items:center;justify-content:center;min-height:300px;background:var(--off);border-right:0;border-bottom:0">
+        <div style="text-align:center;padding:2rem">
+          <div style="font-size:2rem;color:var(--text-faint);margin-bottom:.75rem">+</div>
+          <p style="color:var(--text-soft);font-size:.875rem;margin-bottom:1.25rem">Your project<br>could be here</p>
+          <a href="contact.html" class="btn btn-outline" style="font-size:.8rem;padding:9px 18px">Start a Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="margin-bottom:.85rem">
+        <div class="logo-icon"><div class="logo-icon-stripe"></div></div>
+        <div class="logo-text"><b style="color:white">Credent Systems</b><small style="color:rgba(255,255,255,.35)">IT Solutions & Engineering</small></div>
+      </a>
+      <p>Engineering the future of smart infrastructure. Industry-standard IT and engineering solutions — precisely tailored for your business. Formerly 4S Engineering & Technologies.</p>
+      <div class="footer-socials">
+        <a href="#" class="f-soc">f</a><a href="#" class="f-soc">in</a><a href="#" class="f-soc">ig</a><a href="#" class="f-soc">yt</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Solutions</h4>
+      <ul class="footer-links">
+        <li><a href="sol-cctv.html">Video Surveillance</a></li>
+        <li><a href="sol-facility.html">Facility Protection</a></li>
+        <li><a href="sol-perimeter.html">Perimeter Security</a></li>
+        <li><a href="sol-comm.html">Communication</a></li>
+        <li><a href="sol-intercom.html">Smart Intercom</a></li>
+        <li><a href="sol-av.html">Audio Visual</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Client List</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="srv-support.html">Support Services</a></li>
+        <li><a href="srv-consult.html">Consultancy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a>Banasree R/A, Dhaka</a></li>
+        <li><a>info@credentsystems.com</a></li>
+        <li><a>+880 1xxx-xxxxxx</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Credent Systems. All Rights Reserved. Formerly 4S Engineering & Technologies.</p>
+    <div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/8801XXXXXXXXX" class="wa-btn" target="_blank">💬</a>
+<div class="toast" id="toast">✅ Done!</div>
+
+<script>
+/* SLIDER */
+let cur=0,tot=4,auto;
+function upd(){
+  document.getElementById('slides').style.transform=`translateX(-${cur*100}%)`;
+  document.querySelectorAll('.s-dot').forEach((d,i)=>d.classList.toggle('on',i===cur));
+  document.getElementById('sNum').textContent=String(cur+1).padStart(2,'0');
+}
+function nextSlide(){cur=(cur+1)%tot;upd();}
+function prevSlide(){cur=(cur-1+tot)%tot;upd();}
+document.querySelector('.hero').addEventListener('mouseenter',()=>clearInterval(auto));
+document.querySelector('.hero').addEventListener('mouseleave',()=>auto=setInterval(nextSlide,5500));
+auto=setInterval(nextSlide,5500);
+let tx=0;
+document.getElementById('slides').addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+document.getElementById('slides').addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)d<0?nextSlide():prevSlide();});
+
+/* NAVBAR SCROLL */
+window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>10));
+
+/* MOBILE MENU */
+function toggleMob(){document.getElementById('mobMenu').classList.toggle('open');}
+
+/* REVEAL */
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.fade-up,.fade-left,.fade-right').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

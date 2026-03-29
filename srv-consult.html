@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project Consultancy — Credent Systems</title>
+<meta name="description" content="Expert project planning, technology design and consultancy for maximum value.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="tb-socials">
+    <a href="#" class="tb-soc">f</a><a href="#" class="tb-soc">in</a><a href="#" class="tb-soc">ig</a>
+  </div>
+  <div class="tb-info">
+    <div class="tb-item">📞 <span>+880 1xxx-xxxxxx</span></div>
+    <div class="tb-item">✉️ <span>info@credentsystems.com</span></div>
+  </div>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><div class="logo-icon-stripe"></div></div>
+      <div class="logo-text"><b>Credent Systems</b><small>IT Solutions &amp; Engineering</small></div>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><button class="nav-btn" onclick="location.href='index.html'">Home</button></li>
+      <li class="nav-item">
+        <button class="nav-btn">Company <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <a href="about.html" class="dd-link"><div class="dd-icon-wrap">🏢</div><div class="dd-text"><b>About Us</b><small>Our story &amp; mission</small></div></a>
+          <a href="clients.html" class="dd-link"><div class="dd-icon-wrap">🤝</div><div class="dd-text"><b>Client List</b><small>30+ trusted partners</small></div></a>
+          <a href="blog.html" class="dd-link"><div class="dd-icon-wrap">📝</div><div class="dd-text"><b>Blog</b><small>Insights &amp; news</small></div></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-btn">Solution <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="mega"><div class="mega-grid">
+          <a href="sol-cctv.html" class="mega-link"><div class="mega-icon">📷</div><div class="mega-text"><b>Video Surveillance</b><small>IP CCTV &amp; AI analytics</small></div></a>
+          <a href="sol-facility.html" class="mega-link"><div class="mega-icon">🏭</div><div class="mega-text"><b>Facility Protection</b><small>Access, alarms &amp; barriers</small></div></a>
+          <a href="sol-perimeter.html" class="mega-link"><div class="mega-icon">🛡️</div><div class="mega-text"><b>Perimeter Security</b><small>Fence &amp; outdoor detection</small></div></a>
+          <a href="sol-comm.html" class="mega-link"><div class="mega-icon">📡</div><div class="mega-text"><b>Communication</b><small>IP PBX, WiFi &amp; video conf</small></div></a>
+          <a href="sol-intercom.html" class="mega-link"><div class="mega-icon">🔔</div><div class="mega-text"><b>Smart Video Intercom</b><small>Integrated door &amp; lobby</small></div></a>
+          <a href="sol-av.html" class="mega-link"><div class="mega-icon">🎬</div><div class="mega-text"><b>Audio Visual</b><small>4K video, LED wall, AV dist</small></div></a>
+        </div></div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-btn">Services <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <a href="srv-support.html" class="dd-link"><div class="dd-icon-wrap">🛠️</div><div class="dd-text"><b>Support Services</b><small>AMC &amp; maintenance</small></div></a>
+          <a href="srv-consult.html" class="dd-link"><div class="dd-icon-wrap">💼</div><div class="dd-text"><b>Project Consultancy</b><small>Design &amp; planning</small></div></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-btn">Market <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <a href="mkt-edu.html" class="dd-link"><div class="dd-icon-wrap">🎓</div><div class="dd-text"><b>Education Sector</b><small>Schools, colleges &amp; unis</small></div></a>
+          <a href="mkt-rmg.html" class="dd-link"><div class="dd-icon-wrap">🏭</div><div class="dd-text"><b>RMG Industry</b><small>Garments &amp; factories</small></div></a>
+        </div>
+      </li>
+      <li class="nav-item"><button class="nav-btn" onclick="location.href='contact.html'">Contacts</button></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get a Quote →</a>
+    <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" class="mob-a">🏠 Home</a>
+  <div class="mob-sec">Company</div>
+  <a href="about.html" class="mob-a">About Us</a><a href="clients.html" class="mob-a">Client List</a><a href="blog.html" class="mob-a">Blog</a>
+  <div class="mob-sec">Solution</div>
+  <a href="sol-cctv.html" class="mob-sub">→ Video Surveillance</a><a href="sol-facility.html" class="mob-sub">→ Facility Protection</a><a href="sol-perimeter.html" class="mob-sub">→ Perimeter Security</a><a href="sol-comm.html" class="mob-sub">→ Communication</a><a href="sol-intercom.html" class="mob-sub">→ Smart Video Intercom</a><a href="sol-av.html" class="mob-sub">→ Audio Visual</a>
+  <div class="mob-sec">Services</div>
+  <a href="srv-support.html" class="mob-a">Support Services</a><a href="srv-consult.html" class="mob-a">Project Consultancy</a>
+  <div class="mob-sec">Market</div>
+  <a href="mkt-edu.html" class="mob-a">For Education</a><a href="mkt-rmg.html" class="mob-a">For RMG Industry</a>
+  <a href="contact.html" class="mob-cta">Get a Quote →</a>
+</div>
+<div class="pg-hero">
+  <div class="pg-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><b>Services</b><span>/</span><b style="color:rgba(255,255,255,.85)">Project Consultancy</b></div>
+    <h1>Project Consultancy</h1>
+    <p>Expert project planning, technology design, and consultancy to ensure your investment delivers maximum value.</p>
+  </div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="sol-2col">
+      <div class="fade-left">
+        <div class="sol-img"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=85" alt="Project Consultancy" loading="lazy"></div>
+      </div>
+      <div class="fade-right">
+        <div class="label">Consultancy</div>
+        <h2 class="h2" style="margin-bottom:.85rem">Expert Guidance at<br>Every Stage</h2>
+        <p class="body-lg" style="margin-bottom:1.75rem">Great technology projects start with great planning. Our consultancy team stays on top of developments, educates clients, supports converged technologies, and provides business solutions that exceed expectations.</p>
+        <div class="sol-features"><div class="sol-feat fade-up d1"><div class="sf-icon">🔍</div><div class="sf-text"><h4>Needs Assessment</h4><p>In-depth analysis of your current infrastructure, pain points, and future requirements.</p></div></div><div class="sol-feat fade-up d2"><div class="sf-icon">📐</div><div class="sf-text"><h4>System Design</h4><p>Technical drawings, BOQ preparation, and solution architecture aligned with your budget.</p></div></div><div class="sol-feat fade-up d3"><div class="sf-icon">📈</div><div class="sf-text"><h4>ROI Analysis</h4><p>Cost-benefit analysis and ROI projections to justify your technology investment.</p></div></div></div>
+        <a href="contact.html" class="btn btn-dark" style="margin-top:2rem">Get a Free Assessment <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="sol-card-grid"><div class="sol-card fade-up d1"><div class="sol-card-ic">🏗️</div><h4>Project Management</h4><p>End-to-end PM ensuring on-time, on-budget delivery with clear milestone communication.</p></div><div class="sol-card fade-up d2"><div class="sol-card-ic">📚</div><h4>Technology Education</h4><p>Training your team to operate and get maximum value from installed systems.</p></div><div class="sol-card fade-up d3"><div class="sol-card-ic">🔗</div><h4>Vendor Neutrality</h4><p>We recommend the best solution for your needs — not just what we sell.</p></div><div class="sol-card fade-up d4"><div class="sol-card-ic">📋</div><h4>Compliance Advisory</h4><p>Guidance on regulatory compliance, data protection, and security standards.</p></div><div class="sol-card fade-up d5"><div class="sol-card-ic">📐</div><h4>Technical Drawing</h4><p>AutoCAD drawings, network diagrams, and as-built documentation.</p></div><div class="sol-card fade-up d6"><div class="sol-card-ic">💰</div><h4>Budget Planning</h4><p>Phased implementation plans to align technology upgrades with your budget cycle.</p></div></div>
+  </div>
+</section>
+<div class="cta-band">
+  <div class="cta-band-bg" style="background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=85')"></div>
+  <div class="cta-band-ov"></div>
+  <div class="cta-inner">
+    <div class="cta-text">
+      <div class="label" style="color:rgba(255,255,255,.4)">Ready to Get Started?</div>
+      <h2 class="h2">Get a Free Consultancy Assessment</h2>
+      <p class="body-lg" style="color:rgba(255,255,255,.6)">Our certified engineers will assess your premises and design the perfect solution.</p>
+    </div>
+    <a href="contact.html" class="btn btn-white-solid" style="padding:16px 40px;font-size:1rem">Contact Us <span class="arr">→</span></a>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="margin-bottom:.85rem">
+        <div class="logo-icon"><div class="logo-icon-stripe"></div></div>
+        <div class="logo-text"><b style="color:white">Credent Systems</b><small style="color:rgba(255,255,255,.35)">IT Solutions &amp; Engineering</small></div>
+      </a>
+      <p>Engineering the future of smart infrastructure. Formerly 4S Engineering &amp; Technologies.</p>
+      <div class="footer-socials">
+        <a href="#" class="f-soc">f</a><a href="#" class="f-soc">in</a><a href="#" class="f-soc">ig</a><a href="#" class="f-soc">yt</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Solutions</h4>
+      <ul class="footer-links">
+        <li><a href="sol-cctv.html">Video Surveillance</a></li><li><a href="sol-facility.html">Facility Protection</a></li>
+        <li><a href="sol-perimeter.html">Perimeter Security</a></li><li><a href="sol-comm.html">Communication</a></li>
+        <li><a href="sol-intercom.html">Smart Intercom</a></li><li><a href="sol-av.html">Audio Visual</a></li>
+      </ul>
+    </div>
+    <div class="footer-col"><h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li><li><a href="clients.html">Client List</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="srv-support.html">Support Services</a></li>
+        <li><a href="srv-consult.html">Consultancy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col"><h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a>Banasree R/A, Dhaka</a></li><li><a>info@credentsystems.com</a></li>
+        <li><a>+880 1xxx-xxxxxx</a></li><li><a href="contact.html">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Credent Systems. All Rights Reserved. Formerly 4S Engineering &amp; Technologies.</p>
+    <div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+<a href="https://wa.me/8801XXXXXXXXX" class="wa-btn" target="_blank">💬</a>
+<div class="toast" id="toast">✅ Message sent!</div>
+<script>
+window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>10));
+function toggleMob(){document.getElementById('mobMenu').classList.toggle('open');}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.fade-up,.fade-left,.fade-right').forEach(el=>obs.observe(el));
+function handleSubmit(e){e.preventDefault();const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),4500);e.target.reset();}
+</script>
+</body>
+</html>
